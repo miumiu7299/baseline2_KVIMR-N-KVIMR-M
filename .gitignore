@@ -1,0 +1,81 @@
+﻿# Build outputs
+*.o
+*.a
+*.so
+*.ko
+*.class
+*.jar
+*.war
+*.cmd
+*.d
+Module.symvers
+modules.order
+
+**/build/
+**/build-*/
+**/target/
+**/.tmp_versions/
+**/CMakeFiles/
+**/CMakeCache.txt
+**/cmake_install.cmake
+**/build.ninja
+**/.ninja_*
+
+# Benchmark runtime outputs
+results/
+artifacts/
+*.runtime_ms
+*.img
+
+# Backup/temp files
+*.bak
+*.tmp
+*~
+*.before-*
+*.bak-*
+
+# IDE / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Crash/runtime logs
+hs_err_pid*.log
+*.log
+
+# Downloaded third-party archives
+*.tar.gz
+*.tgz
+*.zip
+
+# RocksDB dependencies downloaded during local builds
+rocksdb-5.11.3-kvimr/bzip2-1.0.6/
+rocksdb-5.11.3-kvimr/zstd-1.3.3/
+rocksdb-5.11.3-kvimr/snappy-*/
+rocksdb-5.11.3-kvimr/lz4-*/
+rocksdb-5.11.3-kvimr/zlib-*/
+
+# Baseline2.1 / IMR-LSM test scripts not part of Baseline2.2
+tests/imr_lsm_*
+
+# Historical/debug notes not part of formal Baseline2.2 release
+YCSB_A_F_PROGRESS.md
+TEST_REPORT.md
+git-preview.txt
+
+# RocksDB generated executables
+rocksdb-5.11.3-kvimr/blob_dump
+rocksdb-5.11.3-kvimr/cache_bench
+rocksdb-5.11.3-kvimr/column_aware_encoding_exp
+rocksdb-5.11.3-kvimr/db_bench
+rocksdb-5.11.3-kvimr/db_repl_stress
+rocksdb-5.11.3-kvimr/db_stress
+rocksdb-5.11.3-kvimr/ldb
+rocksdb-5.11.3-kvimr/memtablerep_bench
+rocksdb-5.11.3-kvimr/persistent_cache_bench
+rocksdb-5.11.3-kvimr/rocksdb_dump
+rocksdb-5.11.3-kvimr/rocksdb_undump
+rocksdb-5.11.3-kvimr/sst_dump
+rocksdb-5.11.3-kvimr/table_reader_bench
+rocksdb-5.11.3-kvimr/write_stress
